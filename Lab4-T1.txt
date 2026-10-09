@@ -1,0 +1,65 @@
+30 ?- house = house.
+true.
+
+--true because both atoms are identical--
+
+
+31 ?- house = 67.
+false.
+
+--false because atoms are not identical--
+
+
+32 ?- edge(a,b) = edge(C,b).
+C = a.
+
+---Both structures have the same predicate name and have two arguments,so first argument unify variable C to a---
+
+
+
+33 ?- edge(a,d) = edge(C,B).
+C = a,
+B = d.
+
+-Both structures have the same predicate name and have two arguments,so first argument unify variable C to a , and second unify variable B to d ---
+
+
+
+
+34 ?- edge(C,B) = edge(a,d).
+C = a,
+B = d.
+
+---same concept as previous tasks--- 
+
+
+35 ?- edge(A,f(g,h)) = edge(a,B).
+A = a,
+B = f(g, h).
+
+---same concept as previous tasks---
+
+
+36 ?- edge(A,A) = edge(b,c).
+false.
+
+
+---b and c are different atoms and a variable can only hold hte same value--- 
+
+
+37 ?- edge(A,A) = edge(b,b).
+A = b.
+
+
+
+38 ?- A = B, B = f.
+A = B, B = f.
+
+
+
+39 ?- A = B, B = f, A = e.
+false.
+
+
+
+40 ?- 
